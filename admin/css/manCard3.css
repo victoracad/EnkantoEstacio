@@ -1,0 +1,160 @@
+#main_cardapio{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 80%;
+    overflow: scroll;
+    z-index: 1;
+}
+#options_cardapio{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: auto;
+    align-items: center;
+    overflow: scroll;
+}
+#list_dishes{
+    width: 60%;
+    height: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card_menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.card_menu:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card_menu img {
+    display: flex;
+    width: 250px;
+    height: 0;
+    height: auto;
+    border-radius: 5%;
+}
+
+.text_overlay {
+    position: absolute;
+    bottom: 10px; /* Ajuste a posição do texto */
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.438); /* Fundo semi-transparente */
+    color: #fff; /* Cor do texto */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+}
+
+
+
+#div_buttonAdd{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 46%;
+    height: 60px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background-color: white;
+    top: 8%;
+
+}
+#btn_add{
+    background-color: rgb(138, 214, 25);
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+#div_list{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card_dishe{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_dishe img{
+    height: 150px;
+    border-radius: 20px;
+}
+.name_desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    height: 100%;
+    width: 80%;
+}
+.nameDishe{
+    font-size: 25px;
+}
+.price_stat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.price_dishe{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#nameListDishes{
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-delete{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-delete:hover{
+    background-color: rgb(153, 2, 2);
+}
+.btn-edit{
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-edit:hover{
+    background-color: rgb(6, 6, 167);
+}

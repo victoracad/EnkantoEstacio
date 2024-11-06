@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+.sec_main{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    border: 2px dashed black;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+nav{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    background-color: white;
+    box-sizing: border-box;
+}
+#img_logo{
+    width: 50px;
+}
+
+.title_main{
+  font-weight: bolder;
+  font-size: 40px;
+  color: #e7dbc5;
+  text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+
+/* From Uiverse.io by tarantino421 
+  ICONE DE HAMBURGUER*/ 
+  .buttons__burger {
+    --size: 2.2rem;
+    --clr: #f1d49d;
+    width: var(--size);
+    height: calc(0.7 * var(--size));
+    cursor: pointer;
+    position: relative;
+    display: block;
+    
+  }
+  
+  .buttons__burger #burger {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .buttons__burger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 3px solid var(--clr);
+    background-color: var(--clr);
+    transition: 0.15s ease-in-out;
+    
+  }
+  
+  .buttons__burger span:nth-of-type(1) {
+    top: 0;
+    right: 0;
+    transform-origin: right center;
+    
+  }
+  
+  .buttons__burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .buttons__burger span:nth-of-type(3) {
+    top: 100%;
+    right: 0;
+    transform-origin: right center;
+    transform: translateY(-100%);
+  }
+  
+  .buttons__burger #burger:checked ~ span:nth-of-type(1) {
+    transform: translateY(-30%) rotate(40deg);
+    width: 50%;
+    top: 50%;
+  }
+  
+  .buttons__burger #burger:checked ~ span:nth-of-type(3) {
+    transform: translateY(-70%) rotate(-40deg);
+    width: 50%;
+    top: 50%;
+  }
+  /*ICONE DE HAMBURGUER*/
+
+
+  /*AREA DA BARRA LATERAL*/
+/* Estilos da sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 19%; /* Fora da tela inicialmente */
+  width: 300px;
+  height: 100vh;
+  background-color: #e7dbc5;
+  z-index: 12; 
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.sidebar.open {
+  left: 35.1%; /* Entra na tela */
+}
+
+.hide_sidebar{
+    position: absolute;
+    top: 0;
+    left: -300px; /* Fora da tela inicialmente */
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 13;
+}
+  
+  /*AREA DA BARRA LATERAL*/
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+ .title_carrossel{
+    font-size: 28px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+  #title_sidebar{
+    font-size: 35px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+  .para_carrossel{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    text-shadow: 
+        -1px -1px 0 #ffffff,  
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+  }
+
+.opcoes_cardapio{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.imgOpcoes{
+  height: 250px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.linha_op{
+  display: flex;
+  flex-direction: row;
+}
+  
+.text-overlay {
+  position: absolute;
+  bottom: 10px; /* Ajuste a posição do texto */
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.438); /* Fundo semi-transparente */
+  color: #fff; /* Cor do texto */
+  padding: 5px 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  font-size: 20px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+}
+.image_container{
+  position: relative;
+}
+.number_comanda span{
+  font-size: 24px;
+  font-weight: bolder;
+  text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+#link_detalhes{
+  text-decoration: underline;
+  color: white;
+}
+hr{
+  border: 0;
+    height: 5px; /* Espessura da linha */
+    background-color: black;
+}
+

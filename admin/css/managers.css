@@ -1,0 +1,94 @@
+#h1Ma{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#secViewMagers{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    height: 80%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: scroll;
+    position: relative;
+}
+#div_buttonAdd{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 60%;
+    height: 60px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    background-color: white;
+    top: 8%;
+
+}
+#btn_add{
+    background-color: rgb(138, 214, 25);
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+#btn_add:hover{
+    background-color: rgb(106, 165, 18);
+}
+
+
+
+.div_managerView{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.div_managerfoto img{
+    height: 100px;
+}
+.buttonsPlus{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 10px;
+
+}
+.buttonsPlus button{
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    width: 150px;
+}
+#edit_btn{
+    background-color: rgb(0, 174, 255);
+}
+#edit_btn:hover{
+    background-color: rgb(3, 147, 214);
+}
+#del_btn{
+    background-color: rgb(250, 71, 47);
+}
+#del_btn:hover{
+    background-color: rgb(214, 62, 41);
+}
+.info_managers{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info span{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+}

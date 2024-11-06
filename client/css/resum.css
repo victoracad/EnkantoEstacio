@@ -1,0 +1,83 @@
+.div_resumo{
+    height: 100vh;
+}
+.div_input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.resumo{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+}
+.carrinho{
+    display: flex;
+    flex-direction: column;
+}
+.pedido_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 5px;
+}
+.disheName{
+    display: flex;
+    flex-direction: column;
+}
+.divQName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.quantDishe{
+    font-size: 25px;
+}
+.nameDlt{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divPrice{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.tot_wish{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.btn_send_pedido{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+}
+.btn_send{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 30px;
+}
+.btn_send:hover{
+    background-color: rgb(206, 2, 2);
+}
+.dltDishe{
+    cursor: pointer;
+}

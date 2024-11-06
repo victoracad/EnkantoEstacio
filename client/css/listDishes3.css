@@ -1,0 +1,77 @@
+.list_pratofeito{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    min-height: 100vh;
+}
+.cardPrato{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.img_pfex{
+    width: 100%;
+   
+}
+.description_name{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+   
+}
+.div_imgPrato{
+    width: 30%;
+   
+}
+.nameDishe{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 
+    -1.5px -1.5px 0 #000,  
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+}
+.description{
+    font-size: 13px;
+}
+.precoDesc{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+.div_cart{
+    display: flex;
+    position: fixed;
+    top: 90%;
+    right: 36%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: #e7dbc5;
+    cursor: pointer;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.div_cart :hover{
+    background-color: #cebea0;
+    border-radius: 50%;
+}
+#div_cart{
+    font-size: 40px;
+}
+.quant_itens{
+    font-size: 40px;
+}
+
+

@@ -1,0 +1,107 @@
+body{
+    position: relative;
+}
+.sec_comandas{
+    border: 1px solid black;
+    width: 50%;
+    overflow: scroll;
+    gap: 10px;
+}
+.sec_actions{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+.title_Comandas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.valor_total{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid black;
+    justify-content: end;
+}
+.div_comanda{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px;
+    background-color: rgb(224, 196, 159);
+    cursor: pointer;
+    border-radius: 20px;
+    gap: 10px;
+}
+.div_top_comanda{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.div_list_pedidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tbl_Comanda{
+    border: 1px solid black;
+    width: 100%;
+}
+.linha{
+    border: none;
+  height: 2px;
+  background-color: black; /* Cor azul */
+  width: 90%; /* Largura de 80% do container */
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
+.total_comanda{
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+    justify-content: end;
+    gap: 10px;
+}
+.bottom_comanda{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.btn_actions{
+    display: flex;
+    justify-content: end;
+}
+.btn_fechar{
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(123, 248, 123);
+}
+.btn_fechar:hover{
+    background-color: rgb(94, 240, 94);
+}
+#btn_actions{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    gap: 50px;
+}
+.info_comanda{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 25px;
+}
